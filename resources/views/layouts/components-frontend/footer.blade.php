@@ -3,31 +3,41 @@
         <div class="row">
             <div class="col-sm-6 col-lg-3 p-b-50">
                 <h4 class="stext-301 cl0 p-b-30">
-                    Jenis Kulit
+                    Jenis Skincare
                 </h4>
 
                 <ul>
                     <li class="p-b-10">
                         <p>
-                            Normal
+                            Moisturaizer
                         </p>
                     </li>
 
                     <li class="p-b-10">
                         <p>
-                            Kering
+                            Serum
                         </p>
                     </li>
 
                     <li class="p-b-10">
                         <p>
-                            Berminyak
+                            FacialWash
                         </p>
                     </li>
 
                     <li class="p-b-10">
                         <p>
-                            Berjerawat
+                            Toner
+                        </p>
+                    </li>
+                    <li class="p-b-10">
+                        <p>
+                            Micellar Water
+                        </p>
+                    </li>
+                    <li class="p-b-10">
+                        <p>
+                            Exfoliasi
                         </p>
                     </li>
                 </ul>
@@ -76,16 +86,8 @@
                 </p>
 
                 <div class="p-t-27">
-                    <a href="#" class="fs-18 cl7 hov-cl1 trans-04 m-r-16">
-                        <i class="fa fa-facebook"></i>
-                    </a>
-
                     <a href="https://www.instagram.com/glad2glow/?hl=en" class="fs-18 cl7 hov-cl1 trans-04 m-r-16">
                         <i class="fa fa-instagram"></i>
-                    </a>
-
-                    <a href="#" class="fs-18 cl7 hov-cl1 trans-04 m-r-16">
-                        <i class="fa fa-pinterest-p"></i>
                     </a>
                 </div>
             </div>
@@ -112,27 +114,7 @@
         </div>
 
         <div class="p-t-40">
-            <div class="flex-c-m flex-w p-b-18">
-                <a href="#" class="m-all-1">
-                    <img src="{{ asset('frontend/images/icons/icon-pay-01.png') }}" alt="ICON-PAY">
-                </a>
-
-                <a href="#" class="m-all-1">
-                    <img src="{{ asset('frontend/images/icons/icon-pay-02.png') }}" alt="ICON-PAY">
-                </a>
-
-                <a href="#" class="m-all-1">
-                    <img src="{{ asset('frontend/images/icons/icon-pay-03.png') }}" alt="ICON-PAY">
-                </a>
-
-                <a href="#" class="m-all-1">
-                    <img src="{{ asset('frontend/images/icons/icon-pay-04.png') }}" alt="ICON-PAY">
-                </a>
-
-                <a href="#" class="m-all-1">
-                    <img src="{{ asset('frontend/images/icons/icon-pay-05.png') }}" alt="ICON-PAY">
-                </a>
-            </div>
+           
 
             <p class="stext-107 cl6 txt-center">
                 <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->

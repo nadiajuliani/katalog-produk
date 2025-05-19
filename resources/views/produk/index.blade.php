@@ -65,7 +65,7 @@
                                 <td><img src="{{ asset('storage/produk/' . $data->foto) }}" alt=""
                                         style="widht: 50px; height: 50px"></td>
                                 <td>{{ $data->harga }}</td>
-                                <td>{{ $data->deskripsi }}</td>
+                                <td>{{ Str::limit($data->deskripsi, 10) }}</td>
 
                                 <th>
                                     <form action="{{ route('produk.destroy', $data->id) }}" method="POST">

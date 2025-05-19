@@ -1,26 +1,31 @@
 <?php
 namespace App\Http\Controllers;
 
+use Illuminate\Http\Request;
+use App\Models\Produk;
+
+
 class FrontController extends Controller
 {
     public function index()
     {
-        return view('index');
+        $produk = Produk::all();
+        return view('index', compact('produk'));
+
     }
 
     public function about()
     {
         return view('about');
     }
-
-    public function article()
+    public function produk()
     {
-        return view('article.index');
-    }
+        $produk = Produk::all();
+        return view('produk', compact('produk'));
 
-    public function articleShow($id)
+    }
+    public function show()
     {
-        return view('article.show');
+        return view('show');
     }
-
 }

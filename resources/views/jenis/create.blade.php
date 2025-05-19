@@ -36,18 +36,22 @@
                 <h3>Halaman Menambah</h3>
             </div>
             <div class="card">
-                    <div class="card-header">Tambah Data Jenis</div>
-                    <div class="card-body">
-                        <form action="{{ route('jenis.store') }}" method="post" enctype="multipart/form-data">
-                            @csrf
-                            <div class="form-group">
-                                <label>Nama Jenis</label>
-                                <input type="text" class="form-control" name="nama_jenis" required>
-                            </div>
-                            <button type="submit" class="btn btn-primary">simpan</button>
-                        </form>
-                    </div>
+                <div class="card-header">Tambah Data Jenis</div>
+                <div class="card-body">
+                    <form action="{{ route('jenis.store') }}" method="post" enctype="multipart/form-data">
+                        @csrf
+                        <div class="form-group">
+                            <label>Nama Jenis</label>
+                            <input type="text" class="form-control  @error('nama_jenis') is-invalid @enderror"
+                                name="nama_jenis" required>
+                            @error('nama_jenis')
+                                <div class="invaild-feedback">Nama Jenis Tidak Boleh Sama</div>
+                            @enderror
+                        </div>
+                        <button type="submit" class="btn btn-primary">simpan</button>
+                    </form>
                 </div>
+            </div>
         </div>
     </div>
     </div>

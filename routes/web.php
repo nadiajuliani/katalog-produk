@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\JenisController;
 use App\Http\Controllers\ProdukController;
+use App\Http\Controllers\FrontController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -19,9 +20,15 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Auth::routes();
+Auth::routes(['register' => false]);
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+// frontend
+Route::get('/', [FrontController::class, 'index'])->name('index');
+Route::get('about', [FrontController::class, 'about']);
+Route::get('produk', [FrontController::class, 'produk']);
+Route::get('show', [FrontController::class, 'show']);
 
 //crud
 //role admin

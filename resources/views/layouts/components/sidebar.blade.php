@@ -33,16 +33,23 @@
                          <span>Produk</span>
                      </a>
                  </li>
-                 <li class="sidebar-item active">
-                         <a href="javascript:void(0)" class="d-flex align-items-center gap-2 dropdown-item">
-                             <form action="{{ route('logout') }}" method="post">
-                                 @csrf
-                                 <button type="submit" class="mb-0 fs-10 btn btn-link">Keluar</button>
-                             </form>
-                         </a>
-                    </li>
-                </li>
-            </ul>
+                 <li class="sidebar-item  has-sub">
+                     <a href="#" class='sidebar-link'>
+                         <i class="bi bi-person-badge-fill"></i>
+                         <span>Authentication</span>
+                     </a>
+                     <ul class="submenu ">
+                         <li class="submenu-item ">
+                             <a href="{{ route('logout') }}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();" class="d-flex align-items-center gap-2 dropdown-item">
+                             <p class="mb-0 fs-10">Keluar</p></a>
+                                 <form id="logout-form" action="{{ route('logout') }}" method="post" class="d-none">
+                                     @csrf
+                                 </form>
+                         </li>
+                     </ul>
+                 </li>
+                 </li>
+             </ul>
          </div>
          <button class="sidebar-toggler btn x"><i data-feather="x"></i></button>
      </div>
